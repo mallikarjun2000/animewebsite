@@ -1,0 +1,51 @@
+.nav{
+    display: flex;
+    height: 55px;
+    flex-direction: row;
+    position: sticky;
+    top : 0;
+    width: 100%;
+}
+
+.nav-top{
+    font-size: 120%;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.nav-new-anime{
+    font-size: 120%;
+    font-weight: 600;
+    color: aliceblue;
+    
+}
+
+
+.nav-home{
+    font-size:200%;
+    font-weight: 800;
+    margin-left: 0px;
+}
+
+.navbar-nav{
+    float: left;
+    display: flex;
+    align-items:right ;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+.nav-top:hover{
+    background-color: rgb(101, 104, 104);
+}
+
+.nav-new-anime:hover{
+    background-color: rgb(101, 104, 104);
+}
+
+
+.navbar-collapse{
+    display: flex;
+    justify-content: flex-end;
+}

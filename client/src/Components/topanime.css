@@ -1,0 +1,21 @@
+.top-main-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(19, 18, 18);
+}
+
+.top-title{
+    color: rgb(172, 168, 163);
+    font-size: 150%;
+    justify-self: center;
+    align-self: center;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.top-main-main{
+    background-color: rgb(19, 18, 18);
+
+}
