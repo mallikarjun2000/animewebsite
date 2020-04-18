@@ -1,10 +1,11 @@
-import React from 'react';
+import React ,{ Component } from 'react';
 
-class NewAnime extends React.Component{
+class NewAnime extends Component{
+
     render() {
         return (
-             <div style={{backgroundColor:"black"}}>
-                 NEw Anime
+             <div style={{marginTop:"100px"}}>
+                 Top Anime of All Time . 
              </div>
         );
     }

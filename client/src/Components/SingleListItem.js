@@ -1,6 +1,7 @@
 import React from 'react';
 import './singlelistitem.css';
-import PlaceHolder from '../assets/placeholder-img.jpg';
+//import PlaceHolder from '../assets/placeholder-img.jpg';
+import { Link } from 'react-router-dom';
 
 class SingleListItem extends React.Component{
     render(){
@@ -9,7 +10,7 @@ class SingleListItem extends React.Component{
         const title = anime_data.title;
         const img_url = anime_data.image_url;
         const episodes = anime_data.episodes;
-        console.log(img_url);
+        
 
         var airing=false,disply;
         if(airing)
@@ -17,6 +18,7 @@ class SingleListItem extends React.Component{
         else
             disply= "Not Airing"
 
+        const url = '/landingpage/'+anime_data.mal_id;
         return(
             <div className="card single-card">
                 <img className="single-img" src={img_url} alt=".."/>
@@ -26,8 +28,10 @@ class SingleListItem extends React.Component{
                     <div className="single-rating" >Rating : </div>
                     <div>{anime_data.rank}</div>
                 </div>
+                <Link to={url} >
                 <button className="btn btn-primary single-btn"
                 >Know More</button>
+                </Link>
             </div>
         )
     }

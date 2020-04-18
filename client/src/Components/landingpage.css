@@ -1,0 +1,29 @@
+.landing-main-div{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.landing-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.landing-body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.landing-header-right{
+    display:  flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 4%;
+    justify-content: space-around;
+}
+
+.landing-trailer{
+    align-self: center;
+}

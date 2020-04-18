@@ -1,10 +1,10 @@
 import React from 'react';
 import '../Components/home.css';
-import Carousel from './Carousel';
 
 class Home extends React.Component{
 
     componentDidMount(){
+
     }
 
     constructor(){
@@ -38,7 +38,7 @@ class Home extends React.Component{
                     marginTop:"-6px",
                     marginLeft:"10px"
                 }}>Search</button>
-                <Carousel/>
+                
             </div>
         )
     }

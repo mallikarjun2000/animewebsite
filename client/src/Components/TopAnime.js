@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import SingleAnime from './SingleListItem';
 import './topanime.css';
+import Loading from '../assets/giphy.webp';
 
 class TopAnime extends React.Component {
 
@@ -26,17 +27,17 @@ class TopAnime extends React.Component {
         {
             return(
             <div>
-                Loading ... 
+                <img src={Loading}/> 
             </div>
             )
         }
         return(
             <div className="top-main-main">
-            <div className="top-title">Top Anime List</div>
+            <div className="top-title">New Anime List</div>
             <div className="top-main-div">
                 {
                     this.state.webdata.map(SINGLEANIME=>{
-                        return <SingleAnime singleanime={SINGLEANIME} />
+                        return <SingleAnime key={SINGLEANIME.mal_id} singleanime={SINGLEANIME} />
                     })
                 }
             </div>
