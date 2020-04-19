@@ -17,7 +17,7 @@ class Nav extends React.Component{
                 <ul class="navbar-nav">
                 <li class="nav-item">
                 <Link to='/newanime'>
-                <a class="nav-link nav-new-anime" href="#" >Top Anime</a>
+                <a class="nav-link nav-new-anime" href="#" >Gener</a>
                 </Link>
                 </li>
                 <li class="nav-item">

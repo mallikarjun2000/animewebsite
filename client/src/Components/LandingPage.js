@@ -55,8 +55,8 @@ class LandingPage extends React.Component{
                     <div className="landing-header-right">
                         <h2>{title}</h2>
                         <p>Rating : {rating}</p>
-        <p>Episodes : {episodes}</p>
-        <p>status : {status}</p>
+                        <p>Episodes : {episodes}</p>
+                        <p>status : {status}</p>
                         <div>Synopsis : </div>
                         <div> {synopsis} </div>
                     </div>

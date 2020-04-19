@@ -1,6 +1,6 @@
 import React ,{ Component } from 'react';
 
-class NewAnime extends Component{
+class Gener extends Component{
 
     render() {
         return (
@@ -11,4 +11,4 @@ class NewAnime extends Component{
     }
 }
 
-export default NewAnime;
+export default Gener;

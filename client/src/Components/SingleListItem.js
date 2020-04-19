@@ -4,13 +4,19 @@ import './singlelistitem.css';
 import { Link } from 'react-router-dom';
 
 class SingleListItem extends React.Component{
+
+
     render(){
 
         const anime_data = this.props.singleanime;
         const title = anime_data.title;
         const img_url = anime_data.image_url;
         const episodes = anime_data.episodes;
+        var start_date = anime_data.start_date;
+        const mal_id = anime_data.mal_id;
         
+        if(start_date == null)
+        start_date = "Not available"
 
         var airing=false,disply;
         if(airing)
@@ -20,18 +26,15 @@ class SingleListItem extends React.Component{
 
         const url = '/landingpage/'+anime_data.mal_id;
         return(
+            
             <div className="card single-card">
-                <img className="single-img" src={img_url} alt=".."/>
-                <div className="single-name">{title}</div>
-                <p className="single-start-date">{anime_data.start_date}</p>
-                <div className="single-rating-div" >
-                    <div className="single-rating" >Rating : </div>
-                    <div>{anime_data.rank}</div>
+                <Link to={url}>
+                <div className="single-div-img">
+                    <img className="single-img" src={img_url} alt=".."/>
                 </div>
-                <Link to={url} >
-                <button className="btn btn-primary single-btn"
-                >Know More</button>
                 </Link>
+                <div className="single-anime-name">{title}</div>
+                <div className="single-anime-year">{start_date}</div>
             </div>
         )
     }
