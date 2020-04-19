@@ -19,10 +19,6 @@
     align-self: center;
 }
 
-.single-img:hover{
-    opacity: 90%;
-}
-
 
 .single-anime-name{
     align-self: flex-start;
