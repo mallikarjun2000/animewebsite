@@ -3,5 +3,5 @@
         - Latest Upcoming anime List.
         - Search About your favourite anime.
         - Watch Latest Trailers
-    
-    [click here] (http://animebuzz.herokuapp.com) to visit the website.
+   
+ [click here](http://animebuzz.herokuapp.com) to visit the website.
