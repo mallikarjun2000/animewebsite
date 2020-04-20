@@ -57,12 +57,12 @@ class LandingPage extends React.Component{
                         <p>Rating : {rating}</p>
                         <p>Episodes : {episodes}</p>
                         <p>status : {status}</p>
-                        <div>Synopsis : </div>
-                        <div> {synopsis} </div>
                     </div>
                 </div>
                 <div className="landing-body">
                 <hr></hr>
+                    <div>Synopsis : </div>
+                        <div> {synopsis} </div>
                     <div className="landing-gener-div">
                         Gener : Geners yet to come
                         {}

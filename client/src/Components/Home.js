@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Components/home.css';
+import { Link } from 'react-router-dom';
 
 class Home extends React.Component{
 
@@ -21,6 +22,7 @@ class Home extends React.Component{
 
     render(){
 
+        const url = '/searchresults/'+this.state.search_text;
         return(
             <div className="home-main-div">
                 <div className="home-title">Anime Buzz</div>
@@ -33,12 +35,13 @@ class Home extends React.Component{
                         marginLeft:"0px",
                         height:"40px"}}
                         placeholder=" search your anime" />
+                <Link to={url}>
                 <button className="btn btn-primary"
                 style={{
                     marginTop:"-6px",
                     marginLeft:"10px"
                 }}>Search</button>
-                
+                </Link>
             </div>
         )
     }

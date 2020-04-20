@@ -6,6 +6,7 @@ import NavComponent from './Components/Nav';
 import TopAnime from './Components/TopAnime';
 import Gener from './Components/Gener';
 import LandingPage from './Components/LandingPage';
+import SearchResults from './Components/SearchResultsPage';
 import { BrowserRouter as Router , Switch , Route } from 'react-router-dom';
 
 
@@ -19,6 +20,7 @@ function App() {
             <Route path='/topanime' exact component={TopAnime}/>
             <Route path='/landingpage/:malid' exact component={LandingPage} />
             <Route path='/newanime' exact component={Gener} />
+            <Route path='/searchresults/:text' exact component={SearchResults} />
         </Switch>
     </div>
     </Router>
