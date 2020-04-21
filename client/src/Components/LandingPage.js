@@ -3,6 +3,7 @@ import axios from 'axios';
 import Loading from '../assets/giphy.webp';
 import Placeholder from '../assets/placeholder-img.jpg';
 import './landingpage.css';
+import { Link } from 'react-router-dom';
 
 class LandingPage extends React.Component{
 
@@ -46,6 +47,7 @@ class LandingPage extends React.Component{
             const duration = anime_data.duration;
             const synopsis = anime_data.synopsis;
             const trailer_url = anime_data.trailer_url;
+            const gener = anime_data.genres;
 
         return(
             <div className="landing-main-div">
@@ -65,12 +67,19 @@ class LandingPage extends React.Component{
                 <hr></hr>
                     <div>Synopsis : </div>
                         <div> {synopsis} </div>
+                        <div  style={{marginTop:"25px",marginBottom:"10px"}} >Geners</div>
                     <div className="landing-gener-div">
-                        Gener : Geners yet to come
-                        {}
+                        {gener.map(generitem=>{
+                            const url = '/newanime/'+generitem.mal_id
+                            if(generitem.name!=null){
+                            return <Link to={url} key={generitem.mal_id} ><div  className="langing-single-gener">{
+                                generitem.name
+                            }</div></Link>
+                            }
+                        })}
                     </div>
                     <p><b>Watch Trailer Here !</b></p>
-                    <iframe className="landing-trailer" iframe src={trailer_url} width="400px" height="250px">
+                    <iframe className="landing-trailer" iframe src={trailer_url} width="400px" height="250px">Not Available
                     </iframe>
                 </div>
             </div>
