@@ -35,7 +35,7 @@ class SearchResultPages extends React.Component{
                         single_Anime.start_date = single_Anime.start_date.slice(0,4);
                         else
                         single_Anime.start_date = "Not Available";
-                        return <SingleListItem singleanime={single_Anime}/>
+                        return <SingleListItem key={single_Anime.mal_id} singleanime={single_Anime}/>
                     }
                     )}
                 </div>
