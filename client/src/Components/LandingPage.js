@@ -42,6 +42,7 @@ class LandingPage extends React.Component{
             const episodes = anime_data.episodes;
             const status = anime_data.status;
             const aired_details = anime_data.aired;
+            const score = anime_data.score;
             const duration = anime_data.duration;
             const synopsis = anime_data.synopsis;
             const trailer_url = anime_data.trailer_url;
@@ -57,6 +58,7 @@ class LandingPage extends React.Component{
                         <p>Rating : {rating}</p>
                         <p>Episodes : {episodes}</p>
                         <p>status : {status}</p>
+                        <p>Score : <b>{score}</b> /10</p>
                     </div>
                 </div>
                 <div className="landing-body">
