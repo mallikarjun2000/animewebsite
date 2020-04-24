@@ -2,6 +2,7 @@ import React from 'react';
 import '../Components/home.css';
 import { Link } from 'react-router-dom';
 import { Redirect } from 'react-router-dom';
+import Carousel from './Carousel';
 
 class Home extends React.Component{
 
@@ -38,6 +39,7 @@ class Home extends React.Component{
             return <Redirect push to={url}/>
         }
         return(
+            
             <div className="home-main-div">
                 <div className="home-title">Anime Buzz</div>
                 <div className="home-description"> Now All your Favourate anime in one website . </div>
@@ -57,6 +59,7 @@ class Home extends React.Component{
                     marginLeft:"10px"
                 }}>Search</button>
                 </Link>
+                
             </div>
         )
     }
