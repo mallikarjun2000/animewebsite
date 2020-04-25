@@ -53,7 +53,7 @@ class LandingPage extends React.Component{
             <div className="landing-main-div">
                 <div className="landing-header">
                     <div className="landing-header-left">
-                        <img className="landing-image" src={img_url} />
+                        <img style={{padding:"30px"}} className="landing-image" src={img_url} />
                     </div>
                     <div className="landing-header-right">
                         <h2>{title}</h2>
@@ -79,7 +79,7 @@ class LandingPage extends React.Component{
                         })}
                     </div>
                     <p><b>Watch Trailer Here !</b></p>
-                    <iframe className="landing-trailer" iframe src={trailer_url} width="400px" height="250px">Not Available
+                    <iframe className="landing-trailer" iframe src={trailer_url} width="380px" height="250px">Not Available
                     </iframe>
                 </div>
             </div>

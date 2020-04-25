@@ -3,20 +3,20 @@
     background-image: url('../assets/background_home.jpg');
     /*box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);*/
     background-color: rgb(48, 47, 47);
-    height: 590px;
+    height: 700px;
     background-size: cover;
     background-position: center;
 }
 
 .home-title{
-    font-size: 600%;
+    font-size: 400%;
     color: rgb(255, 255, 255);
     font-weight: 600;
     padding-top: 80px;
 }
 
 .home-description{
-    font-size: 180%;
+    font-size: 170%;
     color: rgb(197, 191, 191);
 }
 
