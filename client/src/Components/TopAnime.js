@@ -8,9 +8,10 @@ class TopAnime extends React.Component {
 
     componentDidMount(){
         const url = 'https://api.jikan.moe/v3/top/anime/1/upcoming';
-        axios.get(url)
+        const url2 = 'https://api.jikan.moe/v3/season/later';
+        axios.get(url2)
         .then(res=>{console.log(res);
-                    this.setState({webdata : res.data.top});
+                    this.setState({webdata : res.data.anime});
         })
         .catch(err=>{alert('error' , err)});
     }

@@ -8,6 +8,7 @@ import Gener from './Components/Gener';
 import LandingPage from './Components/LandingPage';
 import SearchResults from './Components/SearchResultsPage';
 import ParticularGener from './Components/ParticularGenerComponent';
+import Footer from './Components/FooterComponent';
 import { BrowserRouter as Router , Switch , Route } from 'react-router-dom';
 
 
@@ -25,6 +26,7 @@ function App() {
             <Route path='/newanime/:gener' exact component={ParticularGener}/>
         </Switch>
     </div>
+    <Footer/>
     </Router>
   );
 }
