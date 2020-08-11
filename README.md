@@ -6,4 +6,6 @@
    
  [click here](http://animebuzz.herokuapp.com) to visit the website.
  
- ![img1](https://raw.githubusercontent.com/mallikarjun2000/animewebsite/master/docs/images/AnimeBuzz2.png)
+ ![img1](https://github.com/mallikarjun2000/animewebsite/blob/master/docs/images/AnimeBuzz1.png)
+ 
+ ![img2](https://github.com/mallikarjun2000/animewebsite/blob/master/docs/images/AnimeBuzz2.png)
